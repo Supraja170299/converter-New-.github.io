@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Converter</title>
+    <link href = "./style.css" rel="stylesheet">
+</head>
+<body>
+    <h1>Number System Converter</h1>
+    <div class="Wrapper">
+        <div class="inputs">
+            <div class="w-100">
+                <!---from Dropdown-->
+                <select id = "from" class="inputfield">
+                    <option value ="2">Binary</option>
+                    <option value ="8">octal</option>
+                    <option value ="10">Decimal</option>
+                    <option value ="16">Hexadecimal</option>
+                </select>
+            </div>
+
+            <!----to Dropdown-->
+            <div class ="w-100">
+           <select id ="to" class = "inputfield">
+            <option value ="2">Binary</option>
+            <option value ="8">octal</option>
+            <option value ="10">Decimal</option>
+            <option value ="16">Hexadecimal</option>
+
+           </select>
+        </div>
+        </div>
+        <div class="w-100">
+            <input id = "input-number"  type = "text" placeholder="Enter your Number" class="inputfield">
+        </div>
+        <div style ="margin-top: 40px;">
+            <button id="convert">Convert</button>
+            <button id="swap">Swap</button>
+        </div>
+        <!--ResultBox-->
+        <div id ="result-box"></div>
+    </div>
+    <script src = "script.js"></script>
+</body>
+</html>
